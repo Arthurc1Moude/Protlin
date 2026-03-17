@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ProtlinTJ
+GenericName=Protlin IDE
+Comment=Integrated Development Environment for Protlin
+Exec=protlintj %F
+Icon=protlintj
+Terminal=false
+MimeType=text/x-protlin;
+Categories=Development;IDE;TextEditor;
+Keywords=protlin;ide;editor;programming;development;
+StartupNotify=true
+StartupWMClass=protlintj

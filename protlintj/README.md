@@ -1,196 +1,226 @@
-# ProtlinTJ - The Protlin IDE
+# ProtlinTJ - Native Protlin IDE
 
-**Born from an Egg, Maximum Myriad** 🥚
+A native, cross-platform IDE for the Protlin programming language built with C++ and GTK4.
 
-ProtlinTJ is a modern, web-based Integrated Development Environment (IDE) specifically designed for the Protlin programming language. It features a beautiful, intuitive interface with four main sections optimized for Protlin development.
+## Features
 
-## 🎯 Features
+### Clean, Simple UI
+- Modern GTK4 interface
+- 4-panel layout: File Manager, Editor, Output, Tools
+- Minimal, distraction-free design
+- Professional appearance
 
-### 4 Main Sections
+### Theme Support
+- **Light Theme**: Clean, bright interface
+- **Dark Theme**: Easy on the eyes for long coding sessions  
+- **Auto Theme**: Automatically follows system theme preference
+- Seamless theme switching with Ctrl+T
 
-1. **📁 Explorer & Project Tree**
-   - File and folder navigation
-   - Project structure overview
-   - Code outline view
-   - Quick file access
+### Advanced Editor
+- Syntax highlighting for Protlin language
+- Line numbers and current line highlighting
+- Auto-indentation and smart tabs
+- Find and replace functionality
+- Cut, copy, paste operations
+- Monospace font optimized for coding
 
-2. **💻 Code Editor**
-   - Syntax highlighting for Protlin
-   - Auto-completion and snippets
-   - Line numbers and code folding
-   - Multi-tab support
-   - Auto-closing brackets and quotes
+### File Management
+- Integrated file explorer
+- Project tree navigation
+- File operations (new, open, save, save as)
+- Context menu support
+- Protlin file type recognition (.prot)
 
-3. **📺 Output & Terminal**
-   - Real-time code execution output
-   - Compilation messages
-   - Debug information
-   - Terminal integration
+### Output Panel
+- Real-time compilation output
+- Error and warning display
+- Integrated terminal
+- Problems panel for diagnostics
 
-4. **🔧 Tools & Properties**
-   - Graphics tools for canvas operations
-   - Code refactoring utilities
-   - Protlin-specific snippets
-   - Performance monitoring
-   - Property inspector
+### Protlin Integration
+- Native Protlin syntax highlighting
+- Keyword recognition for all 471 Protlin keywords
+- Function and variable highlighting
+- Comment and string highlighting
+- Built-in Protlin execution support
 
-### 🎨 UI Features
+## Building
 
-- **Modern Design**: Clean, professional interface with egg-themed branding
-- **Dark/Light Theme**: Toggle between themes with Ctrl+`
-- **Responsive Layout**: Adapts to different screen sizes
-- **Smooth Animations**: Polished user experience
-- **Keyboard Shortcuts**: Efficient workflow with hotkeys
+### Prerequisites
 
-### 🥚 Protlin Integration
+- C++17 compatible compiler (GCC 7+ or Clang 5+)
+- GTK4 development libraries
+- pkg-config
+- CMake 3.16+ (optional)
 
-- **Native Protlin Support**: Built specifically for Protlin development
-- **Graphics Preview**: Visual canvas operations
-- **Code Snippets**: Pre-built Protlin code templates
-- **Syntax Highlighting**: Protlin-aware code coloring
-- **Error Detection**: Real-time syntax checking
+### Ubuntu/Debian
+```bash
+sudo apt install build-essential libgtk-4-dev pkg-config cmake
+```
 
-## 🚀 Getting Started
+### Fedora/RHEL
+```bash
+sudo dnf install gcc-c++ gtk4-devel pkgconfig cmake
+```
 
-### Quick Start
+### Arch Linux
+```bash
+sudo pacman -S base-devel gtk4 pkgconf cmake
+```
 
-1. Open `index.html` in your web browser
-2. Start coding in the editor (main.prot is loaded by default)
-3. Press **F5** or click **Run** to execute your code
-4. Use the file explorer to manage your project
+### Build with Make
+```bash
+cd protlintj
+make
+```
 
-### Sample Code
+### Build with CMake
+```bash
+cd protlintj
+mkdir build && cd build
+cmake ..
+make
+```
 
-The IDE comes with sample Protlin files:
+### Run
+```bash
+# With Make
+make run
 
-- `main.prot` - Basic hello world with graphics
-- `graphics.prot` - Graphics utilities and egg drawing
-- `utils.prot` - Common utility functions
+# With CMake
+./protlintj
+
+# Direct execution
+./bin/protlintj
+```
+
+## Installation
+
+### System Installation
+```bash
+sudo make install
+```
+
+### User Installation
+```bash
+make install DESTDIR=$HOME/.local
+```
+
+### Uninstall
+```bash
+sudo make uninstall
+```
+
+## Usage
+
+### Basic Operations
+- **New File**: Ctrl+N or File → New
+- **Open File**: Ctrl+O or File → Open  
+- **Save File**: Ctrl+S or File → Save
+- **Run Code**: F5 or Run → Execute
+- **Find/Replace**: Ctrl+F or Edit → Find & Replace
+- **Toggle Theme**: Ctrl+T or View → Toggle Theme
+
+### File Types
+ProtlinTJ recognizes and provides syntax highlighting for:
+- `.prot` - Protlin source files
+- All text files with basic editing support
 
 ### Keyboard Shortcuts
-
-- **F5** - Run code
-- **Ctrl+S** - Save file
-- **Ctrl+O** - Open file
 - **Ctrl+N** - New file
-- **Ctrl+R** - Run code
-- **Ctrl+`** - Toggle theme
+- **Ctrl+O** - Open file
+- **Ctrl+S** - Save file
+- **Ctrl+Shift+S** - Save as
+- **Ctrl+Q** - Quit
+- **Ctrl+X** - Cut
+- **Ctrl+C** - Copy
+- **Ctrl+V** - Paste
+- **Ctrl+A** - Select all
+- **Ctrl+F** - Find and replace
+- **Ctrl+T** - Toggle theme
+- **F5** - Run code
 
-## 🎨 Graphics Tools
+## Architecture
 
-ProtlinTJ includes specialized tools for Protlin's graphics capabilities:
+### Components
 
-- **Shape Tools**: Rectangle, Circle, Line, Text
-- **Canvas Operations**: Create, render, and manipulate canvases
-- **Color Picker**: Visual color selection
-- **Animation Preview**: Real-time graphics preview
+1. **IDE Core** (`ide.cpp/h`)
+   - Main application window
+   - Menu and toolbar management
+   - Component coordination
+   - Event handling
 
-## 📦 Code Snippets
+2. **Editor** (`editor.cpp/h`)
+   - Text editing functionality
+   - Syntax highlighting integration
+   - Find/replace operations
+   - File I/O operations
 
-Built-in snippets for common Protlin patterns:
+3. **File Manager** (`file_manager.cpp/h`)
+   - Project tree display
+   - File system navigation
+   - File operations
+   - Context menus
 
-- **function** - Create a new function
-- **canvas** - Set up a graphics canvas
-- **for** - Create a for loop
-- **Custom snippets** - Add your own templates
+4. **Output Panel** (`output_panel.cpp/h`)
+   - Compilation output display
+   - Terminal integration
+   - Problems/diagnostics panel
+   - Message logging
 
-## 🔧 Technical Details
+5. **Theme Manager** (`theme_manager.cpp/h`)
+   - Theme switching logic
+   - CSS style management
+   - System theme detection
+   - Color scheme application
 
-### Architecture
+6. **Protlin Highlighter** (`protlin_highlighter.cpp/h`)
+   - Syntax highlighting engine
+   - Protlin language rules
+   - Theme-aware coloring
+   - Performance optimization
 
-- **Frontend**: Pure HTML5, CSS3, JavaScript (ES6+)
-- **No Dependencies**: Runs entirely in the browser
-- **Responsive**: CSS Grid and Flexbox layout
-- **Modern Fonts**: JetBrains Mono for code, Inter for UI
+### Design Principles
 
-### Browser Support
+- **Native Performance**: C++ with GTK4 for optimal speed
+- **Clean Architecture**: Modular design with clear separation
+- **Memory Efficient**: Smart pointers and RAII patterns
+- **Cross-Platform**: Works on Linux, macOS, Windows
+- **Extensible**: Plugin-ready architecture
 
-- Chrome 80+
-- Firefox 75+
-- Safari 13+
-- Edge 80+
+## Development
 
-### File Structure
+### Code Style
+- C++17 standard
+- RAII and smart pointers
+- Consistent naming conventions
+- Comprehensive error handling
 
-```
-protlintj/
-├── index.html          # Main IDE interface
-├── styles.css          # Complete styling system
-├── script.js           # IDE functionality
-└── README.md           # This file
-```
-
-## 🎯 Usage Examples
-
-### Creating a Graphics Program
-
-```protlin
-// Create a window with golden egg
-function main() {
-    canvas = create_canvas(800, 600, "My Protlin App")
-    
-    // Draw protein (white ellipse)
-    set_color(canvas, 255, 255, 255)
-    draw_ellipse(canvas, 350, 250, 100, 80)
-    
-    // Draw yolk (golden ellipse)
-    set_color(canvas, 255, 215, 0)
-    draw_ellipse(canvas, 370, 270, 60, 50)
-    
-    render(canvas)
-}
-
-main()
-```
-
-### Using Code Snippets
-
-1. Click on a snippet in the Tools panel
-2. The code template is inserted at cursor position
-3. Modify the placeholder values
-4. Run your code with F5
-
-## 🎨 Customization
-
-### Themes
-
-- **Light Theme**: Clean, bright interface
-- **Dark Theme**: Easy on the eyes for long coding sessions
-- **Auto-switching**: Remembers your preference
-
-### Layout
-
-- **Responsive**: Automatically adapts to screen size
-- **Resizable Panels**: Drag to resize sections
-- **Collapsible**: Hide panels you don't need
-
-## 🔮 Future Features
-
-- **Language Server**: Advanced code intelligence
-- **Git Integration**: Version control support
-- **Plugin System**: Extensible architecture
-- **Cloud Sync**: Save projects online
-- **Collaborative Editing**: Real-time collaboration
-- **Mobile Support**: Touch-optimized interface
-
-## 🤝 Contributing
-
-ProtlinTJ is part of the Protlin ecosystem. Contributions welcome!
-
+### Contributing
 1. Fork the repository
-2. Create your feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+2. Create feature branch
+3. Follow existing code style
+4. Add tests if applicable
+5. Submit pull request
 
-## 📄 License
+### Debugging
+```bash
+make debug
+gdb ./bin/protlintj
+```
+
+## License
 
 Copyright © 2026 Moude AI LLC and Moude Corp. All Rights Reserved.
 
 Part of the Protlin™ programming language ecosystem.
 
+## Support
+
+- **Issues**: GitHub Issues
+- **Documentation**: Built-in help system
+- **Community**: Protlin community forums
+
 ---
 
-**Built with ❤️ and 🥚 for the Protlin community**
-
-*"Every great program starts as a simple egg of an idea"*
+**Built with C++ and GTK4 for the Protlin community**
