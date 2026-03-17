@@ -1,0 +1,70 @@
+PROTLIN PROGRAMMING LANGUAGE LICENSE
+Copyright (c) 2026 Moude AI LLC and Moude Corp. All Rights Reserved.
+
+PROPRIETARY AND CONFIDENTIAL
+
+This software and associated documentation files (the "Software") are the 
+proprietary and copyrighted product of Moude AI LLC and Moude Corp. The Protlin 
+Programming Language is a copyrighted work and intellectual property.
+
+TERMS AND CONDITIONS:
+
+1. OWNERSHIP
+   The Protlin Programming Language, including but not limited to its compiler,
+   interpreter, standard library, documentation, and all associated materials,
+   is the exclusive property of Moude AI LLC and Moude Corp and is protected by 
+   copyright laws and international treaty provisions.
+
+2. RESTRICTIONS
+   You may NOT:
+   - Clone, copy, or reproduce this software
+   - Create derivative works or modifications
+   - Distribute, sublicense, or sell copies
+   - Reverse engineer, decompile, or disassemble
+   - Remove or alter any copyright notices
+   - Use the software for commercial purposes without written permission
+
+3. PERMITTED USE
+   You may:
+   - View the source code for educational purposes only
+   - Run the software for personal, non-commercial use
+   - Report bugs and suggest improvements
+   - Contribute to the project under the Contributor License Agreement
+
+4. CONTRIBUTOR LICENSE AGREEMENT
+   By submitting contributions, you:
+   - Grant Moude AI LLC and Moude Corp exclusive rights to your contributions
+   - Certify that you have the right to submit the contribution
+   - Agree that your contributions become part of the copyrighted work
+   - Waive any claims to ownership of contributed code
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+6. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL MOUDE AI LLC OR MOUDE CORP BE LIABLE FOR ANY CLAIM, DAMAGES 
+   OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+   DEALINGS IN THE SOFTWARE.
+
+7. TERMINATION
+   This license is effective until terminated. Your rights under this license
+   will terminate automatically without notice if you fail to comply with any
+   term of this license.
+
+8. GOVERNING LAW
+   This license shall be governed by and construed in accordance with the laws
+   of the jurisdiction in which Moude AI LLC and Moude Corp operate.
+
+9. CONTACT
+   For licensing inquiries, commercial use, or permissions:
+   GitHub: @Arthurc1Moude
+   Repository: https://github.com/Arthurc1Moude/Protlin
+   Email: contact@moudeai.com
+
+NOTICE: Unauthorized copying, distribution, or use of this software is strictly
+prohibited and will be prosecuted to the maximum extent possible under the law.
+
+Protlin™ is a trademark of Moude AI LLC and Moude Corp.

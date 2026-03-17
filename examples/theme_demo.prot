@@ -1,0 +1,28 @@
+// Theme System Demo
+println("=== Theme Demo ===")
+
+// Window 1: Auto theme
+window win1 400 300
+canvas canvas1 400 300
+window_set_theme(win1, "auto")
+canvas_set_alpha(canvas1, 0)
+println("Window 1: AUTO theme")
+
+// Window 2: Dark theme
+window win2 400 300
+canvas canvas2 400 300
+window_set_theme(win2, "dark")
+canvas_set_alpha(canvas2, 0)
+println("Window 2: DARK theme")
+
+// Window 3: Light theme
+window win3 400 300
+canvas canvas3 400 300
+window_set_theme(win3, "light")
+canvas_set_alpha(canvas3, 0)
+println("Window 3: LIGHT theme")
+
+println("Press ESC to close")
+render win1 canvas1
+render win2 canvas2
+render win3 canvas3

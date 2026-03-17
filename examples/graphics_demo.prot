@@ -1,0 +1,22 @@
+// Graphics Demo - Window with shapes
+println("=== Graphics Demo ===")
+
+// Create window and canvas
+window myWin 800 600
+canvas myCanvas 800 600
+
+// Set theme
+window_set_theme(myWin, "auto")
+
+// Draw shapes
+set_color(myCanvas, 255, 100, 100)
+draw myCanvas rectangle 100 100 600 400
+
+set_color(myCanvas, 100, 255, 100)
+draw myCanvas circle 400 300 100
+
+set_color(myCanvas, 100, 100, 255)
+draw myCanvas line 50 50 750 550
+
+println("Window created! Press ESC to close")
+render myWin myCanvas
