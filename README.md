@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.svg" alt="Protlin Logo" width="200"/>
+</p>
+
 # Protlin™ Programming Language
 
 **Official Repository** | **Version 1.0.0** | **Copyright © 2026 Moude AI LLC and Moude Corp**

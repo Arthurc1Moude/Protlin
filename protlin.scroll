@@ -1,0 +1,112 @@
+import ../code/conceptPage.scroll
+
+id protlin
+name Protlin
+appeared 2026
+creators Moude AI LLC
+tags pl
+website https://github.com/Arthurc1Moude/Protlin
+writtenIn rust
+description Protlin is a comprehensive programming language with 471 keywords covering all programming paradigms, built-in graphics capabilities, window management, OS theme detection, and a cloud-based execution system.
+
+fileType text
+wordRank 0
+country United States
+originCommunity Moude AI LLC and Moude Corp
+
+domainName protlin.dev
+ registered 2026
+
+githubRepo https://github.com/Arthurc1Moude/Protlin
+ firstCommit 2026
+ stars 0
+ forks 0
+ subscribers 0
+ created 2026
+ updated 2026
+ description Protlin Programming Language - Complete SDK with compiler, interpreter, package manager, and graphics capabilities
+ issues 0
+
+repoStats
+ firstCommit 2026
+ commits 1
+ committers 1
+ files 30
+
+lineCommentToken //
+
+multiLineCommentTokens /* */
+
+printToken println
+
+stringToken "
+
+booleanTokens true false
+
+keywords abstract accept access acquire activate add address admin after aggregate alert alias align all allocate allow alter analyze and animate any append apply approve archive array as asc assert assign async at atomic attach attribute audit auto await background backup base batch before begin between bind block boolean break broadcast buffer build builtin by cache call cancel canvas cascade case cast catch chain change char check checkpoint choose class clear clone close cluster coalesce collate collect column combine comment commit compact compare compile complete compress compute concat concurrent config configure confirm connect const constraint construct contains continue contract convert copy count create critical cron cross cube current cursor custom cycle data database date datetime deallocate debug decimal declare decode decrement default defer define delay delete deny desc describe deserialize destroy detach detect dictionary diff digest dimension disable discard disconnect distinct distribute do domain double down draw drop duplicate dynamic each echo edge else emit enable encode encrypt end enforce engine ensure enum error escape eval event every except exchange exclude exec execute exists exit expand expect explain export extend external extract fail false fetch field file filter final finally find first float flush for force foreach foreign fork format forward fragment free freeze from full function generate get global go grant graph graphics group guard handle has hash having heap help hidden hint history hold hook host http https if ignore image immutable implement import in include increment index info inherit init inline inner input insert inside install instance int integer interface internal intersect interval into invoke is isolate iterate join json keep key kill label lambda language last lazy lead left len let level library like limit link list listen load local lock log loop lower macro main make manage map match materialize max measure media merge message metadata method middleware min minus mock mode model modify module monitor move multi mutex namespace native network new next no node none not notify null nullif object of off offset on once only open operator optimize option or order outer output over override package parallel param parse partial partition pass password path pattern pause perform persist pipe pivot plan plugin point policy pool port position post power pragma precision predict prepare preserve prev primary print prior private procedure process profile project prompt protect protocol provide public publish pull purge push put query queue quote raise random range rank raw read readonly real rebuild receive record recursive redo reduce ref reference refresh regex region register reject relate release reload remote remove rename render reorder repair repeat replace replicate report request require rescue reset resize resolve resource respond restore restrict result resume retry return reverse revert revoke right role rollback rotate round route row rule run safe sample save scale scan schema scope script search second secure seed seek select self send sequence serial serialize server session set share shift show shutdown signal similar since single size skip sleep slice snapshot socket some sort source spawn split sql start state static status step stop storage store stream strict string struct subscribe success sum super switch sync system table tag take task temp template temporary test text then theme this throw time timeout timestamp to token top trace track transaction transfer transform transient translate trigger trim true truncate try tuple type typedef unarchive unbind undo union unique unit unload unlock unset until update upper upsert url use user using uuid validate value values var variable variant vector verify version view virtual void volatile wait warn watch when where while window with within without work wrap write xml xor yield zone
+
+hasComments true
+hasLineComments true
+hasMultiLineComments true
+hasSemanticIndentation false
+hasCaseInsensitiveIdentifiers false
+hasStrings true
+hasIntegers true
+hasFloats true
+hasBooleans true
+hasWhileLoops true
+hasForLoops true
+hasFunctions true
+hasClasses true
+hasExceptions true
+hasSwitch true
+hasImports true
+hasOperatorOverloading true
+hasZeroBasedNumbering true
+hasModules true
+hasInterfaces true
+hasGenerics true
+hasNamespaces true
+hasPatternMatching true
+hasAsyncAwait true
+hasLambdas true
+hasClosures true
+hasGarbageCollection true
+hasTypeInference true
+hasStaticTyping false
+hasDynamicTyping true
+
+githubLanguage Protlin
+ fileExtensions prot
+ trendingProjectsCount 0
+ type programming
+ aceMode text
+ tmScope source.protlin
+ repos 1
+
+example
+ println("Hello, Protlin!")
+ 
+ function greet(name) {
+     println("Hello, " + name + "!")
+ }
+ 
+ greet("World")
+
+example
+ canvas = create_canvas(800, 600, "My Window")
+ set_color(canvas, 255, 0, 0)
+ draw_rectangle(canvas, 100, 100, 200, 150)
+ render(canvas)
+
+features
+ Feature: Graphics rendering
+ Feature: Window management
+ Feature: OS theme detection
+ Feature: Package manager (4protlin)
+ Feature: Cloud execution via Codec Server
+ Feature: Interactive REPL
+ Feature: Module system with import/export
+ Feature: 471 built-in keywords
+
+reference https://github.com/Arthurc1Moude/Protlin

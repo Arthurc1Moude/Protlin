@@ -1,0 +1,8 @@
+/home/aimoude149/Protlin/sdk/target/debug/deps/percent_encoding-fdb8b4bcafcb590c.d: /home/aimoude149/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/lib.rs /home/aimoude149/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/ascii_set.rs
+
+/home/aimoude149/Protlin/sdk/target/debug/deps/libpercent_encoding-fdb8b4bcafcb590c.rlib: /home/aimoude149/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/lib.rs /home/aimoude149/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/ascii_set.rs
+
+/home/aimoude149/Protlin/sdk/target/debug/deps/libpercent_encoding-fdb8b4bcafcb590c.rmeta: /home/aimoude149/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/lib.rs /home/aimoude149/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/ascii_set.rs
+
+/home/aimoude149/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/lib.rs:
+/home/aimoude149/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/ascii_set.rs:

@@ -1,0 +1,24 @@
+# Build artifacts
+target/
+sdk/target/
+4protlin/target/
+*.rs.bk
+Cargo.lock
+
+# Development files
+.git/
+.gitignore
+.vscode/
+test_*.js
+test_*.prot
+
+# Documentation (keep only essential)
+IMPORT_EXPORT_SYSTEM.md
+
+# Keep only what's needed
+!sdk/src/
+!sdk/Cargo.toml
+!4protlin/src/
+!4protlin/Cargo.toml
+!src/
+!Cargo.toml
