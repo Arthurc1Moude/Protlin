@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.svg" alt="Protlin Logo" width="200"/>
+  <img src="logo.png" alt="Protlin Logo" width="200"/>
 </p>
 
 # Protlin™ Programming Language

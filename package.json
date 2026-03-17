@@ -1,76 +1,50 @@
 {
-  "name": "protlin",
+  "name": "protlin-language-support",
+  "displayName": "Protlin Language Support",
+  "description": "Language support for Protlin programming language",
   "version": "1.0.0",
-  "description": "Protlin Programming Language - Complete SDK with compiler, package manager, and tools",
-  "main": "index.js",
-  "bin": {
-    "protlin": "./bin/protlin.js",
-    "4protlin": "./bin/4protlin.js"
+  "publisher": "moude-ai",
+  "engines": {
+    "vscode": "^1.74.0"
   },
-  "scripts": {
-    "install": "node scripts/install.js",
-    "postinstall": "node scripts/postinstall.js",
-    "test": "node scripts/test.js",
-    "build": "node scripts/build.js"
-  },
+  "categories": [
+    "Programming Languages"
+  ],
   "keywords": [
     "protlin",
-    "programming-language",
-    "compiler",
-    "interpreter",
-    "graphics",
-    "sdk",
-    "package-manager"
+    "programming",
+    "language",
+    "protein",
+    "egg"
   ],
-  "author": "Moude AI LLC and Moude Corp",
-  "license": "SEE LICENSE IN LICENSE",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Arthurc1Moude/Protlin.git"
   },
-  "homepage": "https://github.com/Arthurc1Moude/Protlin",
-  "bugs": {
-    "url": "https://github.com/Arthurc1Moude/Protlin/issues"
+  "contributes": {
+    "languages": [
+      {
+        "id": "protlin",
+        "aliases": [
+          "Protlin",
+          "protlin"
+        ],
+        "extensions": [
+          ".prot"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "protlin",
+        "scopeName": "source.protlin",
+        "path": "./syntaxes/protlin.tmLanguage.json"
+      }
+    ]
   },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
-  },
-  "os": [
-    "linux",
-    "darwin",
-    "win32"
-  ],
-  "cpu": [
-    "x64",
-    "arm64"
-  ],
-  "files": [
-    "bin/",
-    "scripts/",
-    "sdk/src/",
-    "sdk/Cargo.toml",
-    "4protlin/src/",
-    "4protlin/Cargo.toml",
-    "src/",
-    "examples/",
-    "docs/",
-    "Cargo.toml",
-    "LICENSE",
-    "README.md",
-    "ARCHITECTURE.md",
-    "index.js"
-  ],
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "ora": "^5.4.1",
-    "node-fetch": "^2.6.7"
-  },
-  "devDependencies": {},
-  "optionalDependencies": {
-    "protlin-linux-x64": "1.0.0",
-    "protlin-darwin-x64": "1.0.0",
-    "protlin-darwin-arm64": "1.0.0",
-    "protlin-win32-x64": "1.0.0"
+  "devDependencies": {
+    "@vscode/vsce": "^2.15.0"
   }
 }

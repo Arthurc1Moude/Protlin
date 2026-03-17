@@ -1,0 +1,47 @@
+# Build outputs
+target/
+4protlin/target/
+sdk/target/
+
+# Source code (not needed for extension)
+src/
+4protlin/src/
+sdk/src/
+
+# Build files
+Cargo.lock
+Cargo.toml
+4protlin/Cargo.lock
+4protlin/Cargo.toml
+sdk/Cargo.lock
+sdk/Cargo.toml
+
+# Scripts and binaries
+scripts/
+bin/
+4protlin/
+sdk/
+
+# Documentation (keep only essential)
+ARCHITECTURE.md
+HELLO.md
+protlin.scroll
+
+# Git files
+.git/
+.gitignore
+
+# NPM files
+node_modules/
+.npmignore
+
+# VS Code settings
+.vscode/
+
+# Keep only essential files for the extension
+!package.json
+!language-configuration.json
+!syntaxes/
+!icon.png
+!README.md
+!LICENSE

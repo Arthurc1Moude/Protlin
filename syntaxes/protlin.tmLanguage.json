@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Protlin",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#functions"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.protlin",
+          "match": "\\b(if|else|while|for|function|return|var|let|const|true|false|null|undefined)\\b"
+        },
+        {
+          "name": "keyword.other.protlin",
+          "match": "\\b(println|print|canvas|create_canvas|set_color|draw_rectangle|render|import|export|from)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.protlin",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.protlin",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.protlin",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.protlin",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.protlin",
+      "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    "functions": {
+      "name": "entity.name.function.protlin",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*\\()"
+    }
+  },
+  "scopeName": "source.protlin"
+}
