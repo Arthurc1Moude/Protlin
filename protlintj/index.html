@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtlinTJ - Protlin IDE</title>
+    <link rel="icon" type="image/png" href="../icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <img src="../icon.png" alt="Protlin" class="logo">
+            <h1>ProtlinTJ</h1>
+            <span class="version">v1.0.0</span>
+        </div>
+        <div class="header-center">
+            <div class="toolbar">
+                <button class="btn btn-primary" id="runBtn">
+                    <span class="icon">▶</span>
+                    Run
+                </button>
+                <button class="btn btn-secondary" id="saveBtn">
+                    <span class="icon">💾</span>
+                    Save
+                </button>
+                <button class="btn btn-secondary" id="openBtn">
+                    <span class="icon">📁</span>
+                    Open
+                </button>
+                <button class="btn btn-secondary" id="newBtn">
+                    <span class="icon">📄</span>
+                    New
+                </button>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="theme-toggle">
+                <button id="themeBtn" class="btn btn-icon">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Section 1: File Explorer & Project Tree -->
+        <div class="section section-explorer">
+            <div class="section-header">
+                <h3>📁 Explorer</h3>
+                <div class="section-actions">
+                    <button class="btn-icon" title="New File">📄</button>
+                    <button class="btn-icon" title="New Folder">📁</button>
+                    <button class="btn-icon" title="Refresh">🔄</button>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="file-tree">
+                    <div class="tree-item folder expanded">
+                        <span class="tree-icon">📁</span>
+                        <span class="tree-label">My Protlin Project</span>
+                        <div class="tree-children">
+                            <div class="tree-item file active">
+                                <span class="tree-icon">🥚</span>
+                                <span class="tree-label">main.prot</span>
+                            </div>
+                            <div class="tree-item file">
+                                <span class="tree-icon">🥚</span>
+                                <span class="tree-label">graphics.prot</span>
+                            </div>
+                            <div class="tree-item file">
+                                <span class="tree-icon">🥚</span>
+                                <span class="tree-label">utils.prot</span>
+                            </div>
+                            <div class="tree-item folder">
+                                <span class="tree-icon">📁</span>
+                                <span class="tree-label">examples</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <div class="outline-view">
+                    <h4>📋 Outline</h4>
+                    <div class="outline-content">
+                        <div class="outline-item">
+                            <span class="outline-icon">🔧</span>
+                            <span>main()</span>
+                        </div>
+                        <div class="outline-item">
+                            <span class="outline-icon">🔧</span>
+                            <span>greet(name)</span>
+                        </div>
+                        <div class="outline-item">
+                            <span class="outline-icon">📦</span>
+                            <span>canvas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Code Editor -->
+        <div class="section section-editor">
+            <div class="section-header">
+                <div class="tab-bar">
+                    <div class="tab active">
+                        <span class="tab-icon">🥚</span>
+                        <span class="tab-label">main.prot</span>
+                        <button class="tab-close">×</button>
+                    </div>
+                    <div class="tab">
+                        <span class="tab-icon">🥚</span>
+                        <span class="tab-label">graphics.prot</span>
+                        <button class="tab-close">×</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="editor-container">
+                    <div class="line-numbers">
+                        <div class="line-number">1</div>
+                        <div class="line-number">2</div>
+                        <div class="line-number">3</div>
+                        <div class="line-number">4</div>
+                        <div class="line-number">5</div>
+                        <div class="line-number">6</div>
+                        <div class="line-number">7</div>
+                        <div class="line-number">8</div>
+                        <div class="line-number">9</div>
+                        <div class="line-number">10</div>
+                        <div class="line-number">11</div>
+                        <div class="line-number">12</div>
+                        <div class="line-number">13</div>
+                        <div class="line-number">14</div>
+                        <div class="line-number">15</div>
+                    </div>
+                    <textarea class="code-editor" id="codeEditor" spellcheck="false">// Welcome to ProtlinTJ - The Protlin IDE
+// Born from an Egg, Maximum Myriad
+
+function main() {
+    println("Hello from ProtlinTJ!")
+    
+    // Create a beautiful window
+    canvas = create_canvas(800, 600, "My Protlin App")
+    set_color(canvas, 255, 215, 0)  // Golden like egg yolk
+    
+    // Draw our mascot egg
+    draw_ellipse(canvas, 350, 250, 100, 80)
+    set_color(canvas, 255, 255, 255)
+    draw_ellipse(canvas, 370, 270, 60, 50)
+    
+    render(canvas)
+}
+
+main()</textarea>
+                </div>
+                
+                <div class="editor-status">
+                    <div class="status-left">
+                        <span class="status-item">Ln 1, Col 1</span>
+                        <span class="status-item">UTF-8</span>
+                        <span class="status-item">Protlin</span>
+                    </div>
+                    <div class="status-right">
+                        <span class="status-item">🟢 Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Output & Terminal -->
+        <div class="section section-output">
+            <div class="section-header">
+                <div class="tab-bar">
+                    <div class="tab active">
+                        <span class="tab-icon">📺</span>
+                        <span class="tab-label">Output</span>
+                    </div>
+                    <div class="tab">
+                        <span class="tab-icon">💻</span>
+                        <span class="tab-label">Terminal</span>
+                    </div>
+                    <div class="tab">
+                        <span class="tab-icon">🐛</span>
+                        <span class="tab-label">Debug</span>
+                    </div>
+                </div>
+                <div class="section-actions">
+                    <button class="btn-icon" title="Clear">🗑️</button>
+                    <button class="btn-icon" title="Settings">⚙️</button>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="output-content">
+                    <div class="output-line">
+                        <span class="output-time">[14:32:15]</span>
+                        <span class="output-text">🚀 Starting Protlin compilation...</span>
+                    </div>
+                    <div class="output-line">
+                        <span class="output-time">[14:32:16]</span>
+                        <span class="output-text">✅ Compilation successful!</span>
+                    </div>
+                    <div class="output-line">
+                        <span class="output-time">[14:32:16]</span>
+                        <span class="output-text">🎯 Running main.prot...</span>
+                    </div>
+                    <div class="output-line success">
+                        <span class="output-time">[14:32:16]</span>
+                        <span class="output-text">Hello from ProtlinTJ!</span>
+                    </div>
+                    <div class="output-line">
+                        <span class="output-time">[14:32:17]</span>
+                        <span class="output-text">🖼️ Canvas created: 800x600</span>
+                    </div>
+                    <div class="output-line">
+                        <span class="output-time">[14:32:17]</span>
+                        <span class="output-text">🎨 Rendering complete!</span>
+                    </div>
+                    <div class="output-line">
+                        <span class="output-time">[14:32:17]</span>
+                        <span class="output-text">✨ Program finished successfully</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Tools & Properties -->
+        <div class="section section-tools">
+            <div class="section-header">
+                <div class="tab-bar">
+                    <div class="tab active">
+                        <span class="tab-icon">🔧</span>
+                        <span class="tab-label">Tools</span>
+                    </div>
+                    <div class="tab">
+                        <span class="tab-icon">📊</span>
+                        <span class="tab-label">Properties</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="tools-panel">
+                    <div class="tool-group">
+                        <h4>🎨 Graphics Tools</h4>
+                        <div class="tool-grid">
+                            <button class="tool-btn" title="Rectangle">⬜</button>
+                            <button class="tool-btn" title="Circle">⭕</button>
+                            <button class="tool-btn" title="Line">📏</button>
+                            <button class="tool-btn" title="Text">📝</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-group">
+                        <h4>🎯 Code Tools</h4>
+                        <div class="tool-list">
+                            <button class="tool-item">
+                                <span class="tool-icon">🔍</span>
+                                <span>Find & Replace</span>
+                            </button>
+                            <button class="tool-item">
+                                <span class="tool-icon">📐</span>
+                                <span>Format Code</span>
+                            </button>
+                            <button class="tool-item">
+                                <span class="tool-icon">🔧</span>
+                                <span>Refactor</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-group">
+                        <h4>🥚 Protlin Snippets</h4>
+                        <div class="snippet-list">
+                            <div class="snippet-item" data-snippet="function">
+                                <span class="snippet-name">function</span>
+                                <span class="snippet-desc">Create function</span>
+                            </div>
+                            <div class="snippet-item" data-snippet="canvas">
+                                <span class="snippet-name">canvas</span>
+                                <span class="snippet-desc">Create canvas</span>
+                            </div>
+                            <div class="snippet-item" data-snippet="loop">
+                                <span class="snippet-name">for</span>
+                                <span class="snippet-desc">For loop</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-group">
+                        <h4>📈 Performance</h4>
+                        <div class="performance-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Memory:</span>
+                                <span class="stat-value">24.5 MB</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">CPU:</span>
+                                <span class="stat-value">12%</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Lines:</span>
+                                <span class="stat-value">15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Bar -->
+    <footer class="status-bar">
+        <div class="status-left">
+            <span class="status-item">🥚 Protlin v1.0.0</span>
+            <span class="status-item">Ready</span>
+        </div>
+        <div class="status-right">
+            <span class="status-item">Encoding: UTF-8</span>
+            <span class="status-item">CRLF</span>
+            <span class="status-item">Protlin</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
